@@ -1,12 +1,11 @@
-
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 
 /* General Styles */
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #32006a;
+    color: #176a00;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal overflow issues */
 }
 
 header {
@@ -59,7 +59,7 @@ button {
     padding: 15px 30px;
     margin: 15px;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
@@ -72,26 +72,32 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Container for all activity boxes, ensuring only one is shown at a time */
 .activity-container {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    padding: 20px;
+    flex-direction: column; /* Change to column for vertical scrolling */
+    overflow-y: scroll; /* Allows vertical scrolling */
+    scroll-snap-type: y mandatory; /* Ensures snapping to each activity box */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
     width: 100%;
+    max-height: 100vh; /* Optional: constrain the height if needed */
 }
 
+/* Individual activity boxes */
 .activity-box {
     background-color: #ffffff;
     border: 2px solid #3498db;
     border-radius: 15px;
     padding: 20px;
     margin: 20px;
-    width: 300px;
+    width: 80%; /* Adjust width to fit nicely in a vertical layout */
+    max-width: 500px; /* Ensures a max width for readability */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-snap-align: start;
+    scroll-snap-align: start; /* Ensures each box aligns properly when swiped */
+    flex-shrink: 0; /* Prevents the boxes from shrinking */
 }
 
 .activity-box h2 {
@@ -123,9 +129,11 @@ audio {
 .start-btn, .finish-btn, .upload-btn, .back-btn {
     background-color: #27ae60;
     color: white;
-    padding: 10px 20px;
+    padding: 7px 20px;
+    min-height: 30px;
+    min-width: 70px;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     cursor: pointer;
     margin: 5px;
     font-size: 14px;
@@ -139,11 +147,7 @@ audio {
     transform: scale(1.05);
 }
 
-.upload {
-    display: block;
-    margin-top: 10px;
-}
-
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
     h1 {
         font-size: 24px;
@@ -159,36 +163,9 @@ audio {
     }
     
     .activity-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack boxes vertically */
         overflow-y: auto;
         width: 100%;
     }
     
-    .activity-box {
-        padding: 15px;
-        width: 100%;
-        max-width: 500px;
-    }
-    
-    .activity-box h2 {
-        font-size: 20px;
-    }
-    
-    .activity-box p {
-        font-size: 14px;
-    }
-    
-    .timer {
-        font-size: 28px;
-    }
-    
-    .start-btn, .finish-btn, .upload-btn, .back-btn {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-}
-/* You can style the audio player here */
-.audio-player {
-    width: 300px;
-    margin: 20px;
-}
+    .

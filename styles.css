@@ -76,7 +76,7 @@ button:hover {
 .activity-container {
     display: flex;
     flex-direction: column; /* Change to column for vertical scrolling */
-    overflow-y: scroll; /* Allows vertical scrolling */
+    overflow-x: scroll; /* Allows vertical scrolling */
     scroll-snap-type: y mandatory; /* Ensures snapping to each activity box */
     -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
     width: 100%;

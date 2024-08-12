@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eksperiment və Tədqiqat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -14,45 +16,63 @@
     </header>
     <main>
         <button class="back-btn" onclick="navigateTo('index.html')">Ana Səhifə</button>
-        <div class="activity-box">
-            <h2>Hanami Festivalı</h2>
-            <p>Hanami festivalında yelpik hazırlama fəaliyyəti ilə məşğul olun. <br>Bu fəaliyyətin təlimatlarını Yaponiya eksperiment və tədqiqat seti, 1-ci səhifədə oxuya bilərsiniz.</p>
-            <audio controls>
-                    <source src="https://github.com/xtirachi/basla-egp/raw/main/Sfinks_%20Yunan%20v%C9%99%20Misir%20%C6%8Ffsan%C9%99si.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            <div class="timer">00:00:00</div>
-            <button class="start-btn">Başla</button>
-            <button class="finish-btn">Bitir</button>
-            <input type="file" class="upload">
-            <button class="upload-btn">Yüklə</button>
-        </div>
-        <div class="activity-box">
-            <h2>Koinobori Hazırlama</h2>
-            <p>Koinobori hazırlayaraq Yaponiyanın uşaq gününü qeyd edin. <br>Bu fəaliyyətin təlimatlarını Yaponiya eksperiment və tədqiqat seti, 3-cü səhifədə oxuya bilərsiniz.</p>
-            <audio controls>
-                    <source src="https://github.com/xtirachi/basla-egp/raw/main/Sfinks_%20Yunan%20v%C9%99%20Misir%20%C6%8Ffsan%C9%99si.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            <div class="timer">00:00:00</div>
-            <button class="start-btn">Başla</button>
-            <button class="finish-btn">Bitir</button>
-            <input type="file" class="upload">
-            <button class="upload-btn">Yüklə</button>
-        </div>
-        <div class="activity-box">
-            <h2>Robotlar Dünyası</h2>
-            <p>Yaponiyanın robot texnologiyaları haqqında öyrənin və robotlar diyarını kəşf edin. <br>Bu fəaliyyətin təlimatlarını Yaponiya eksperiment və tədqiqat seti, 6-cı səhifədə oxuya bilərsiniz.</p>
-            <audio controls>
-                    <source src="https://github.com/xtirachi/basla-egp/raw/main/Sfinks_%20Yunan%20v%C9%99%20Misir%20%C6%8Ffsan%C9%99si.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            <div class="timer">00:00:00</div>
-            <button class="start-btn">Başla</button>
-            <button class="finish-btn">Bitir</button>
-            <input type="file" class="upload">
-            <button class="upload-btn">Yüklə</button>
+        <div id="viewContainer" class="activity-container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="activity-box">
+                            <h2>Hanami Festivalı</h2>
+                            <p>Hanami festivalında yelpik hazırlama fəaliyyəti ilə məşğul olun. <br>Bu fəaliyyətin təlimatlarını Yaponiya eksperiment və tədqiqat seti, 1-ci səhifədə oxuya bilərsiniz.</p>
+                            <audio controls>
+                                <source src="https://github.com/xtirachi/basla-egp/raw/main/Sfinks_%20Yunan%20v%C9%99%20Misir%20%C6%8Ffsan%C9%99si.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="timer">00:00:00</div>
+                            <button class="start-btn">Başla</button>
+                            <button class="finish-btn">Bitir</button>
+                            <input type="file" class="upload">
+                            <button class="upload-btn">Yüklə</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="activity-box">
+                            <h2>Koinobori Hazırlama</h2>
+                            <p>Koinobori hazırlayaraq Yaponiyanın uşaq gününü qeyd edin. <br>Bu fəaliyyətin təlimatlarını Yaponiya eksperiment və tədqiqat seti, 3-cü səhifədə oxuya bilərsiniz.</p>
+                            <audio controls>
+                                <source src="https://github.com/xtirachi/basla-egp/raw/main/Sfinks_%20Yunan%20v%C9%99%20Misir%20%C6%8Ffsan%C9%99si.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="timer">00:00:00</div>
+                            <button class="start-btn">Başla</button>
+                            <button class="finish-btn">Bitir</button>
+                            <input type="file" class="upload">
+                            <button class="upload-btn">Yüklə</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="activity-box">
+                            <h2>Robotlar Dünyası</h2>
+                            <p>Yaponiyanın robot texnologiyaları haqqında öyrənin və robotlar diyarını kəşf edin. <br>Bu fəaliyyətin təlimatlarını Yaponiya eksperiment və tədqiqat seti, 6-cı səhifədə oxuya bilərsiniz.</p>
+                            <audio controls>
+                                <source src="https://github.com/xtirachi/basla-egp/raw/main/Sfinks_%20Yunan%20v%C9%99%20Misir%20%C6%8Ffsan%C9%99si.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="timer">00:00:00</div>
+                            <button class="start-btn">Başla</button>
+                            <button class="finish-btn">Bitir</button>
+                            <input type="file" class="upload">
+                            <button class="upload-btn">Yüklə</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </main>
 </body>
 </html>
+

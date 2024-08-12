@@ -15,8 +15,19 @@
         <h1>Eksperiment və Tədqiqat</h1>
     </header>
     <main>
-        <button class="back-btn" onclick="navigateTo('index.html')">Ana Səhifə</button>
-        <div id="viewContainer" class="activity-container swiper">
+<button class="back-btn" onclick="navigateTo('index.html')">Ana Səhifə</button>
+    <div class="view-switcher-container">
+        <div class="view-switcher-elem">
+            <button id="gridViewButton" onclick="gridView()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAd0lEQVR4nGNgYGBgMJl519Rk5k0X/PiuKUgtyeqNpt0xNplx+z8x2HjmbSNS1TMYT7/tAOUU43KNMUgOpGb6bQdS1SMsAHFwAGMkNaSqH7VgRAXRTBolUyNaZzSaFxUgMFoWmYyWRcZDIydPH/IWzBwti25iLYsAuUiFLhynTrMAAAAASUVORK5CYII=">
+            </button>
+        </div>
+        <div class="view-switcher-elem">
+            <button id="sliderViewButton" onclick="sliderView()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6ElEQVR4nO1VvQrCQAzuIwh9DnFI+mCC4trRVYskTkLVh3HxZymYUFwdddNJSZ2td3IdlAYyHHz5vrvcXb4o+svoLU4dYF0B6xVZH3VpGCBdWo2zgJEj6w1YZ0g6rssKU2El9xG4IsnUFW9YJLk4C1RHJ02dN0SaWk0r8H2LgKQPrNtQdwCkO+N8LeZlF0nv9jRDCSDpuuKcl10j2wDJOcmKOJRAkhWxcRp38wLQdIsskI9DYN0HE2A5IOngbUH7kz9G4y0C33HNknmNa3MoMxEknQDLqC4N4204L8uU3NkyWXIvy/ypeAK8JGT/eks4pQAAAABJRU5ErkJggg==">
+            </button>
+        </div>
+    </div>        <div id="viewContainer" class="activity-container swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="box">

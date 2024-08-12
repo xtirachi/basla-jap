@@ -48,7 +48,7 @@ main {
 }
 
 p {
-    color: #f96b0d;
+    color: #d1c7e4;
     font-size: 18px;
     max-width: 800px;
     text-align: center;
@@ -67,11 +67,11 @@ button {
     font-size: 16px;
     font-weight: 500;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #562193;
+    background-color: #fc8404;
     transform: scale(1.05);
 }
 

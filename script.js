@@ -31,8 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', () => stopTimer(timers[index]));
     });
 
-    uploadButtons.forEach((button) => {
-        button.addEventListener('click', () => uploadFile(fileInput));
+     uploadButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const fileInput = button.previousElementSibling; // **Change 2: Get the input element before the button**
+            uploadFile(fileInput); // Pass the correct file input element to the upload function
+        });
     });
 });
 

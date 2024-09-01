@@ -16,17 +16,18 @@ body {
     box-sizing: border-box;
 }
 
+
 header {
     background-color: #d1c7e4;
     width: 100%;
-    padding: 10px 0;
+    padding: 0px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 25px 25px 25px 25px
 }
 
 header img {
-    width: 200px;
+    width: 130px;
 }
 
 h1 {
@@ -42,18 +43,27 @@ main {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 10px 0;
     box-sizing: border-box;
     margin: auto;
 }
 
 p {
     color: #d1c7e4;
-    font-size: 18px;
-    max-width: 800px;
+    font-size: 16px;
+    max-width: 500px;
     text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.6;
+    margin-bottom: 15x;
+    line-height: 1.7;
+}
+
+p1 {
+    color: #d1c7e4;
+    font-size: 15px;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 button {
@@ -75,6 +85,134 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Code button */
+#medeniyyet-button {
+    display: block;
+    margin: 20px auto;
+    padding: 40px 180px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(200, 200, 300, 0.6);
+    background-image: url('https://github.com/xtirachi/basla/blob/main/medeniyyet.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      background-color: rgba(155, 99, 101, 0.8);
+    background-blend-mode: overlay;
+  position: relative;
+    height: 100px; /* Fixed height to ensure space for text positioning */
+  line-height: 55px; /* Helps position text within the height */
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#medeniyyet-button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+    /* Hover effect for the start button */
+}
+
+/* Code button */
+#incesenet-button {
+    display: block;
+    margin: 20px auto;
+    padding: 40px 180px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(200, 200, 300, 0.6);
+    background-image: url('https://github.com/xtirachi/basla/blob/main/incesenet.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      background-color: rgba(155, 99, 101, 0.8);
+    background-blend-mode: overlay;
+  position: relative;
+    height: 100px; /* Fixed height to ensure space for text positioning */
+  line-height: 55px; /* Helps position text within the height */
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#incesenet-button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+    /* Hover effect for the start button */
+}
+
+/* Code button */
+#eksperiment-button {
+    display: block;
+    margin: 20px auto;
+    padding: 40px 180px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(200, 200, 300, 0.6);
+    background-image: url('https://github.com/xtirachi/basla/blob/main/eksperiment.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      background-color: rgba(155, 99, 101, 0.8);
+    background-blend-mode: overlay;
+  position: relative;
+    height: 100px; /* Fixed height to ensure space for text positioning */
+  line-height: 55px; /* Helps position text within the height */
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#eksperiment-button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+    /* Hover effect for the start button */
+}
+
+/* Code button */
+#steam-button {
+    display: block;
+    margin: 20px auto;
+    padding: 40px 180px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(200, 200, 300, 0.6);
+    background-image: url('https://github.com/xtirachi/basla/blob/main/steam.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      background-color: rgba(155, 99, 101, 0.8);
+    background-blend-mode: overlay;
+  position: relative;
+    height: 100px; /* Fixed height to ensure space for text positioning */
+  line-height: 55px; /* Helps position text within the height */
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#steam-button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+    /* Hover effect for the start button */
+}
+
 .activity-container {
     /*display: flex;*/
     /*overflow-x: scroll;*/
@@ -90,6 +228,7 @@ button:hover {
     border-radius: 15px;
     padding: 20px;
     width: 350px;
+      height:600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -102,7 +241,9 @@ button:hover {
     color: #562193;
     font-size: 22px;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 900;
+    background-color: rgba(255, 160, 0, 0.5);
+
 }
 
 .activity-box p {
@@ -110,11 +251,15 @@ button:hover {
     font-size: 16px;
     text-align: center;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
+  font-weight: bold;
+    background-color: rgba(200, 200, 300, 0.5);
+
 }
 
 audio {
     margin-bottom: 20px;
+  
 }
 
 .timer {
@@ -258,12 +403,40 @@ audio {
     p {
         font-size: 16px;
     }
+  
+  p1 {
+        font-size: 15px;
+    }
 
     button {
         padding: 12px 25px;
         font-size: 14px;
     }
+  
+   #medeniyyet-button {
+    margin: 20px auto;
+    padding: 40px 60px;
+    font-size: 1.1em;
+}
 
+   #incesenet-button {
+    margin: 20px auto;
+    padding: 40px 60px;
+    font-size: 1.1em;
+}
+  
+   #eksperiment-button {
+    margin: 20px auto;
+    padding: 40px 60px;
+    font-size: 1.1em;
+}
+  
+   #steam-button {
+    margin: 20px auto;
+    padding: 40px 60px;
+    font-size: 1.1em;
+}
+  
     .activity-container {
         /*flex-direction: column;*/
         /*overflow-y: auto;*/
@@ -271,8 +444,8 @@ audio {
     }
 
     .activity-box {
-        width: 100%;
-        max-width: 500px;
+      width: 350px;
+      height:600px;
     }
 
     .activity-box h2 {
